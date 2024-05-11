@@ -11,6 +11,10 @@ app.get("/test", (req, res) => {
   res.send("test");
 });
 
+app.get("/youtube", (req, res) => {
+  res.send("<h1>YouTube</h1>");
+});
+
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening at ${port}`);
 });
